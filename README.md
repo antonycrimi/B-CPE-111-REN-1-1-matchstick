@@ -9,3 +9,15 @@ Ce projet est basé sur un jeu très célèbre basé sur des allumettes. Il y a 
 ### Utilisation :
 
 Voir exemple de fichier texte.
+
+### Détail:
+
+| Category                     | Percentage | Tests     |
+|------------------------------|------------|-----------|
+| Initial display of 4x4 board | 100%       | 3/3       |
+| Bad inputs                   | 83.3%      | 10/12     |
+| Full games                   | 95%        | 19/20     |
+| More Full games              | 100%       | 4/4       |
+| AI effectiveness             | 60%        | 6/10      |
+| **End scores**               | **85.71%** | **42/49** |
+
