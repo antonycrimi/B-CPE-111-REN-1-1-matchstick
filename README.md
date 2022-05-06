@@ -1,6 +1,4 @@
-# Matchstick
-
-## Epitech Project, Matchstick
+# Epitech Project, Matchstick
 
 ### Note: 85.71%
 
