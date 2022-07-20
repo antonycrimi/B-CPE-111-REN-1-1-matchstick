@@ -1,16 +1,23 @@
 # Epitech Project, Matchstick
 
-### Note: 85.71%
+### Grade: 85.71%
 
-### Sujet :
+### Subject :
 
-Ce projet est basé sur un jeu très célèbre à base sur des allumettes. Il y a un certain nombre de lignes d'allumettes. Les deux joueurs se relaient ; chaque joueur peut, sur une même ligne, prendre une ou plusieurs allumettes. Le joueur perdant est celui qui prend la dernière allumette.
+This project is based on a very famous game based on matchsticks. There is a certain number of matchstick lines. The two players take turns; each player can, on a same line, take one or several matchsticks. The losing player is the one to take the last matchstick.
 
-### Utilisation :
+### Instructions :
 
-Voir exemple de fichier texte.
+To compile the project and the lib use:
+```bash
+make
+```
+To see the usage use:
+```bash
+./matchstick -h
+```
 
-### Détail:
+### Detail:
 
 | Category                     | Percentage | Tests     |
 |------------------------------|------------|-----------|
