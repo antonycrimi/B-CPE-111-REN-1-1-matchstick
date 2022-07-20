@@ -5,9 +5,6 @@
 ** game_board.c
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include "libmy.h"
 
 void my_values(int *val, int nb)

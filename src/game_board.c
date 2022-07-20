@@ -5,9 +5,6 @@
 ** game_board.c
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include "libmy.h"
 
 int check_score(int tour, int *matchs, int nb)
@@ -96,16 +93,19 @@ int corps(int nb, int y, int tour, int *tab_buf)
 
 int main(int ac, char **av)
 {
+  int error_return = error_handling(ac, av);
+
+  if (error_return == 84)
+    return 84;
+  else if (error_return == 1)
+    return 0;
+  
   int x = my_getnbr(av[1]);
   int y = my_getnbr(av[2]);
   int tour = 0;
   int *tab_buf = fill_tab(x);
   int error;
 
-  if (ac != 3)
-    return 84;
-  if (x <= 1 || x >= 99)
-    return 84;
   error = corps(x, y, tour, tab_buf);
   if (error == -84)
     return 0;

@@ -5,11 +5,9 @@
 ** ia.c
 */
 
-#include <stdlib.h>
-#include <unistd.h>
 #include "libmy.h"
 
-int ia_match(int *matchs)
+int ia_match(int *matchs, int x, int y)
 {
     int j = rand() % 3;
     int i = 0;
@@ -19,7 +17,7 @@ int ia_match(int *matchs)
     }
     if (check_case(i, j, matchs) == -1)
         return (-1);
-    display_ia(i, matchs);
+    display_ia(i, matchs, x, y);
     return 0;
 }
 
@@ -57,7 +55,14 @@ int *fill_tab(int nb)
     return (matchs);
 }
 
-int random_number(int max) {
+int random_number(int x, int y, int line, int nb_match) {
+    int rand_nb = rand_nb = rand() % (y) + 1;
+
+    while (nb_match - rand_nb < 0)
+    {
+        rand_nb = rand() % (y) + 1;
+    }
+    
     srand(time(0));
-    return (rand() % (max) + 1);
+    return (rand_nb);
 }

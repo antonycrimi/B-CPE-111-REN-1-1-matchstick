@@ -5,8 +5,6 @@
 ** display.c
 */
 
-#include <stdlib.h>
-#include <unistd.h>
 #include "libmy.h"
 
 void display_turn(int tour)
@@ -27,9 +25,9 @@ void display_play(int line, int match)
     my_putchar('\n');
 }
 
-void display_ia(int line, int *matchs)
+void display_ia(int line, int *matchs, int x, int y)
 {
-    int rand = random_number(matchs[line]);
+    int rand = random_number(x, y, line, matchs[line]);
     my_putstr("AI removed ");
     my_putnbr(rand);
     my_putstr(" match(es) from line ");
@@ -66,7 +64,7 @@ int check_tour(int tour, int nb, int y, int *matchs)
         display_play(line, match);
     }
     else {
-        ia_match(matchs);
+        ia_match(matchs, nb, y);
         return (0);
     }
     matchs[line] = matchs[line] - match;

@@ -5,9 +5,6 @@
 ** get_line.c
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include "libmy.h"
 
 int line_confirm(int i, char *line, int nb)
