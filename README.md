@@ -8,13 +8,21 @@ This project is based on a very famous game based on matchsticks. There is a cer
 
 ### Instructions :
 
-To compile the project and the lib use:
+To compile the project use:
 ```bash
 make
 ```
 To see the usage use:
 ```bash
 ./matchstick -h
+```
+To recompile the project use:
+```bash
+make re
+```
+To clean the project use:
+```
+make fclean
 ```
 
 ### Detail:
